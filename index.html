@@ -124,7 +124,7 @@
     }
 
     .accordion {
-      width: 700px;
+      width: 800px;
       margin: 80px auto;
       display: flex;
       flex-direction: column;
@@ -201,16 +201,47 @@
       display: block;
     }
 
-
     .open .num,
     .open .title {
       color: #087f5b;
     }
+
+    .navbar {
+      width: 700px;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 30px;
+    }
+
+    ul {
+      display: flex;
+      list-style: none;
+      justify-content: space-around;
+    }
+
+    ul li a {
+      font-weight: bold;
+      color: #495057;
+      text-decoration: none;
+    }
+
+    /* 
+    ul li a:visited {
+      color: rgba(0, 0, 0, 0.2);
+    } */
   </style>
 </head>
 
 <body>
-  <div class="accordion">
+  <div class="navbar">
+    <ul>
+      <li><a href="#Accordion">Accordion</a></li>
+      <li><a href="#Carousel">Carousel</a></li>
+      <li><a href="Table">Table</a></li>
+      <li><a href="Pagination">Pagination</a></li>
+    </ul>
+  </div>
+  <div class="accordion" id="Accordion">
     <!-- Block-1 -->
 
     <div class="block">
@@ -286,7 +317,7 @@
     </div>
   </div>
 
-  <div class="carousel">
+  <div class="carousel" id="Carousel">
     <img src="images/maria.jpg" alt="Maria">
     <blockquote class="quote">
       <p class="quote-text">
