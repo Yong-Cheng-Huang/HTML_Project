@@ -224,6 +224,39 @@
       color: #495057;
       text-decoration: none;
     }
+
+    /* table */
+    table {
+      width: 800px;
+      margin: 100px auto;
+      /* border: 1px solid #343a40; */
+      font-size: 18px;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      text-align: left;
+      /* border: 1px solid #343a40; */
+      padding: 16px 24px;
+      width: 25%;
+    }
+
+    thead {
+      /* background-color: rgba(14, 88, 14, 0.845); */
+      background-color: #558fb6;
+      color: #fff;
+    }
+
+    tbody,
+    tr:nth-child(odd) {
+      background-color: rgba(152, 152, 152, 0.556);
+    }
+
+    tbody,
+    tr:nth-child(even) {
+      background-color: #dfdfdf;
+    }
   </style>
 </head>
 
@@ -232,8 +265,8 @@
     <ul>
       <li><a href="#Accordion">Accordion</a></li>
       <li><a href="#Carousel">Carousel</a></li>
-      <li><a href="Table">Table</a></li>
-      <li><a href="Pagination">Pagination</a></li>
+      <li><a href="#Table">Table</a></li>
+      <li><a href="#Pagination">Pagination</a></li>
     </ul>
   </div>
   <div class="accordion" id="Accordion">
@@ -342,6 +375,46 @@
       <button class="dot">&nbsp;</button>
     </div>
   </div>
+  <table id="Table">
+    <thead>
+      <tr>
+        <th>Chair</td>
+        <th>The Laid Back</td>
+        <th>The Worker Bee</td>
+        <th>The Chair 4/2</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Width</td>
+        <td>80cm</td>
+        <td>60cm</td>
+        <td>220cm</td>
+      </tr>
+
+      <tr>
+        <th>Height</td>
+        <td>100cm</td>
+        <td>110cm</td>
+        <td>90cm</td>
+      </tr>
+
+      <tr>
+        <th>Depth</td>
+        <td>80cm</td>
+        <td>60cm</td>
+        <td>220cm</td>
+      </tr>
+
+      <tr>
+        <th>Weight</td>
+        <td>80cm</td>
+        <td>60cm</td>
+        <td>220cm</td>
+      </tr>
+    </tbody>
+
+  </table>
 
 </body>
 
